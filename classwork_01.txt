@@ -34,10 +34,6 @@ USE northwind;
    В обратном случае 'Affordable' с применением оператора IF
  */
 
-SELECT
-  product_name,
-  IF(standard_cost > 20, 'Expensive', 'Affordable') AS PriceCategory
-FROM products;
 
 
 /* ============= CONCAT, COALESCE ===========================
