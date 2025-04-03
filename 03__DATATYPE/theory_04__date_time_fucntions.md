@@ -8,7 +8,7 @@ SELECT NOW() AS CurrentDateTime;
 ```
 Результат: 2025-03-12 14:30:45
 
-## CURDATE()
+## CURDATE() / CURRENT_DATE()
 Возвращает текущую дату без времени в формате YYYY-MM-DD.
 Пример:
 ```
@@ -16,7 +16,7 @@ SELECT CURDATE() AS CurrentDate;
 ```
 Результат: 2025-03-12
 
-## CURTIME()
+## CURTIME() / CURRENT_TIME()
 Возвращает текущее время без даты в формате HH:MM:SS.
 Пример:
 ```
@@ -49,6 +49,22 @@ SELECT DATE_ADD(NOW(), INTERVAL 10 DAY) AS FutureDate;
 ```
 Результат: 2025-03-22 14:30:45
 
+## DAYNAME();
+Возвращает имя дня недели на языке, установленном на сервере.
+Пример:
+```
+DAYNAME(NOW());
+```
+Результат: Thursday
+
+Язык сервера можно изменить с помощью `SET lc_time_names = 'ru_RU';`
+Пример:
+```
+SET lc_time_names = 'ru_RU';
+DAYNAME(NOW());
+```
+Результат: Четверг
+
 ## DATE_SUB(date, INTERVAL value unit)
 Вычитает интервал из даты.
 Пример:
@@ -64,6 +80,15 @@ SELECT DATE_SUB(NOW(), INTERVAL 10 DAY) AS PastDate;
 SELECT EXTRACT(YEAR FROM NOW()) AS CurrentYear;
 ```
 Результат: 2025
+
+## TIMESTAMPDIFF(unit, datetime1, datetime2)
+Универсальная функция, изменяющая интервал времени в указанных величинах, где
+`unit` — единица измерения разницы (`SECOND`, `MINUTE`, `HOUR`, `DAY`, `MONTH`, `YEAR` и т. д.).
+Пример:
+```
+SELECT TIMESTAMPDIFF(DAY, '1991-10-25', '2020-01-01');
+```
+Результат: 10295
 
 ## TIME_TO_SEC(time)
 Преобразует время в количество секунд с начала дня.
@@ -83,6 +108,7 @@ SELECT SEC_TO_TIME(9000) AS TimeFormat;
 
 ## STR_TO_DATE(str)
 Преобразует дату в формате строки в дату в формате даты
+Пример:
 ```
 SELECT STR_TO_DATE('11-03-2025', '%d-%m-%Y') AS ConvertedDate;
 ```
