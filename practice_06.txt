@@ -1,0 +1,48 @@
+USE northwind;
+
+
+/* 01 Объедините с помощью UNION ALL названия компаний сотрудников из таблицы employees,
+названия компаний клиентов из таблицы customers и названия компаний для поставщиков из таблицы suppliers. */
+
+SELECT * FROM employees;
+SELECT * FROM customers;
+SELECT * FROM suppliers;
+
+
+/* 02 Объясните почему в предыдущем запросе не стоит использовать UNION ALL.
+Добавьте к предыдущему запросу столбец, показывающий из какой таблицы была взята запись. */
+
+
+
+-- 03 У каких сотрудников в таблице employees нет привилегий таблица employee_privileges. Выведите имя и фамилию.
+SELECT * FROM employees;
+SELECT * FROM employee_privileges;
+
+
+
+-- 04 Работаем с таблице inventory_transactions. Выведите transaction_created_date, а также название типа транзакции и название продукта.
+SELECT * FROM inventory_transactions;
+SELECT * FROM inventory_transaction_types;
+SELECT * FROM products;
+
+
+
+
+
+/* 05 Используя предыдущий запрос, посчитайте количество транзакций по типу.
+Оставьте только те типы транзакций, в которых отсутствует слово 'Sold'. */
+
+
+
+
+
+/* 06 В таблице orders расшифруйте значения всех столбцов, в именах которых присутствует 'id'
+и для которых в базе данных имеются соответствующие таблицы. Выведите все строки в которых ship_city Seattle.
+Объясните почему в данном случае важно использовать LEFT JOIN. */
+
+SELECT * FROM orders;
+SELECT * FROM employees;
+SELECT * FROM customers;
+SELECT * FROM suppliers;
+SELECT * FROM orders_status;
+SELECT * FROM orders_tax_status;

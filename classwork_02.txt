@@ -1,0 +1,49 @@
+USE northwind;
+
+-- 01 Выведите в одну общую выборку из таблиц customers и employees имена и фамилии клиентов и сотрудников.
+SELECT * FROM employees;
+SELECT * FROM customers;
+
+
+
+-- 02 Добавьте дополнительный столбец в котором будет значение employee для сотрудника и customer для клиента.
+
+
+
+-- ================================================= JOIN ===================================================
+SELECT * FROM employees;
+SELECT * FROM employee_privileges;
+
+/* 01 Выведите все строки из объединенных таблиц employees и employee_privileges
+с помощью INNER/RIGHT и LEFT JOIN. Объясните полученные результаты. */
+
+
+
+
+
+
+/* 02 Выведите идентификаторы заказов из таблицы order_details.
+ Дополнительно выведите вместо product_id  столбец с именем продукта product_name из products. */
+ SELECT * FROM order_details;
+ SELECT * FROM products;
+
+
+-- 03 Используя предыдущий запрос, посчитайте количество заказов для каждого наименования продукта.
+
+
+
+
+
+/* 04 Выведите идентификаторы заказов из таблицы order_details.
+Дополнительно выведите вместо product_id  столбец с именем продукта product_name из products
+и столбец payment_amount из таблицы purchase_orders. */
+SELECT * FROM order_details;
+SELECT * FROM purchase_orders;
+
+
+SELECT
+
+
+
+-- 05 Оставить все строки из таблицы order_details.
+
