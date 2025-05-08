@@ -1,0 +1,11 @@
+USE hr;
+SELECT * FROM hr.employees;
+/* БД hr
+   Найти среднюю зарплату по каждому департаменту.
+   Вывести department_id, first_name, last_name, salary, avg_salary_by_department. */
+
+
+   -- с оконной функцией
+
+
+   -- без оконной функции
