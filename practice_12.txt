@@ -1,0 +1,29 @@
+USE employees;
+
+-- 1 Вывести зарплату сотрудника в зависимости от его Id
+
+
+    
+-- Вызов процедуры
+CALL get_table_employee_salary(100);
+CALL get_table_employee_salary(102);
+
+
+/* 2 Создайте хранимую процедуру get_employee_salary, которая
+принимает id сотрудника (IN-параметр) и возвращает его зарплату через OUT-параметр. */
+
+
+-- Вызов процедуры
+CALL get_employee_salary(100, @salary);
+SELECT @salary;
+
+/* 3 Создайте хранимую процедуру increase_salary, которая
+   принимает текущую зарплату сотрудника (INOUT-параметр) и увеличивает её на 10%. */
+
+
+
+-- Вызов процедуры
+SET @salary = 50000;
+CALL increase_salary(@salary);
+SELECT @salary;
+
