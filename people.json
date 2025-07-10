@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Анатолий", "age": 28, "gender": "m"},
+  { "id": 2, "name": "Светлана", "age": 25, "gender": "f"},
+  { "id": 3, "name": "Никита", "age": 33, "gender": "m"},
+  { "id": 4, "name": "Ольга", "age": 22, "gender": "f"}
+]

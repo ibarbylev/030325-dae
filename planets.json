@@ -1,0 +1,10 @@
+[
+  { "name": "Mercury", "orderFromSun": 1, "hasRings": false, "surfaceTemperatureC": 67 },
+  { "name": "Earth", "orderFromSun": 3, "hasRings": false, "surfaceTemperatureC": 14 },
+  { "name": "Uranus", "orderFromSun": 7, "hasRings": true, "surfaceTemperatureC": -197.2 },
+  { "name": "Jupiter", "orderFromSun": 5, "hasRings": true, "surfaceTemperatureC": -145.15 },
+  { "name": "Mars", "orderFromSun": 4, "hasRings": false, "surfaceTemperatureC": -63 },
+  { "name": "Neptune", "orderFromSun": 8, "hasRings": true, "surfaceTemperatureC": -201 },
+  { "name": "Venus", "orderFromSun": 2, "hasRings": false, "surfaceTemperatureC": 464 },
+  { "name": "Saturn", "orderFromSun": 6, "hasRings": true, "surfaceTemperatureC": -139.15 }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": 1, "customer": "Olga", "product": "Apple", "amount": 15.55, "city": "Berlin" },
+  { "id": 2, "customer": "Anna", "product": "Apple", "amount": 10.05, "city": "Madrid" },
+  { "id": 3, "customer": "Olga", "product": "Kiwi", "amount": 9.6, "city": "Berlin" },
+  { "id": 4, "customer": "Anton", "product": "Apple", "amount": 20, "city": "Roma" },
+  { "id": 5, "customer": "Olga", "product": "Banana", "amount": 8, "city": "Madrid" },
+  { "id": 6, "customer": "Petr", "product": "Orange", "amount": 18.3, "city": "Paris" }
+]
