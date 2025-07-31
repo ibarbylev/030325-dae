@@ -1,0 +1,19 @@
+/* 7. Из коллекции Atlas sample_airbnb.listingsAndReviews:
+найти самого активного пользователя, который оставил больше всего отзывов.
+*/
+
+
+/* 8. Из коллекции Atlas sample_restaurants.restaurants:
+узнать, какие кухни самые популярные ? (топ 5)
+*/
+
+
+/* 9. Использовать $lookup, чтобы объединить эти коллекции
+на основе поля accounts в коллекции customers
+и поля account_id в коллекции transactions.*/
+
+
+
+/* 10. Из коллекций Atlas sample_restaurants.neighborhoods
+и sample_restaurants.restaurants: найти все рестораны Брайтон бич.
+*/
