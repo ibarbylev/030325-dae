@@ -1,0 +1,5 @@
+Скачать сервер:
+https://dev.mysql.com/downloads/mysql/
+
+Как установить сервер (пошаговая инструкция):
+https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/

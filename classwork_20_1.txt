@@ -1,0 +1,43 @@
+USE sakila;  
+SELECT * FROM actor;
+SELECT * FROM address;
+SELECT * FROM category;
+SELECT * FROM city;
+SELECT * FROM country;
+SELECT * FROM customer;
+SELECT * FROM film;
+SELECT * FROM film_actor;
+SELECT * FROM film_category;
+SELECT * FROM inventory;
+SELECT * FROM language;
+SELECT * FROM payment;
+SELECT * FROM rental;
+SELECT * FROM search_results;
+SELECT * FROM staff;
+SELECT * FROM store;
+
+
+/* 1. Используя базу sakila, которая содержит информацию о фильмах, актерах, категориях и так далее,
+выведите фильмы, в названии которых содержится слово “LION”,
+посчитайте количество таких фильмов. */
+
+/* 2.  Выведите названия всех фильмов в категории “Horror”.
+(Подсказка: join таблиц film и film_category и фильтр по category_id). */
+
+/* 3.  Выведите названия фильмов с названием категории. */
+
+/* 4.  Выведите 10 самых длинных фильмов. */
+
+/* 5.  Выведите количество фильмов по категориям. */
+
+/* 6.  Выведите категории, в которых больше 20 фильмов. */
+
+/* 7.  Выведите
+ - названия фильмов,
+ - названия категорий и
+ - среднюю продолжительность фильма в каждой категории.
+ Использовать оконные функции.  */
+
+/* 8.  Измените предыдущий запрос так, чтобы помимо названия фильма и категории,
+выводился также ранг по длине фильма. */
+
